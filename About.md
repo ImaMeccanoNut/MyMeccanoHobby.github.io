@@ -1,3 +1,10 @@
+yaml
+
+---
+layout: default
+title: My Page Title
+---
+
 Welcome to My Meccano Hobby — a space dedicated to preserving, celebrating, and sharing one of the most iconic construction systems ever created.
 
 My name is Kevin Clark, and I live in the small northern village of Chetwynd, BC, surrounded by mountains, forests, and the kind of quiet that inspires creativity. For as long as I can remember, Meccano has been more than a pastime for me — it’s been a lifelong fascination with engineering, history, and the joy of building something with your own hands.
