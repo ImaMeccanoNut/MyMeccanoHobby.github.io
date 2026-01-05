@@ -1,5 +1,5 @@
 Gem::Specification.new do |spec|
-  spec.name          = "your-theme-name"
+  spec.name          = "Meccano"
   spec.version       = "0.1.0"
   spec.summary       = "A custom Jekyll theme"
   spec.files         = Dir["**/*"]
