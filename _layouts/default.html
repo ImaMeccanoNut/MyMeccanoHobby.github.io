@@ -1,13 +1,114 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset+"utf-8">
-    <title> {{ page.title }} </title>
-    <link rel="stylesheet" href="/assets/style.css">
-  </head>
-  <body>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }} — Meccano Historical Museum</title>
 
-    <!-- Navigation will go here -->
-    {{  content  }}
-  </body>
+  <!-- Typography -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700&family=Fira+Sans:wght@300;400;500&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #fdfaf3; /* cream paper */
+      font-family: 'Fira Sans', sans-serif;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    /* Navigation Window */
+    .nav-window {
+      border: 2px solid black;
+      padding: 20px;
+      background: #fffef8;
+      margin-bottom: 40px;
+    }
+
+    .nav-title {
+      font-family: 'Roboto Slab', serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      text-align: center;
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+    }
+
+    .nav-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+
+    .nav-list li {
+      display: inline-block;
+      margin: 0 12px;
+    }
+
+    .nav-list a {
+      text-decoration: none;
+      color: black;
+      font-weight: 600;
+      font-family: 'Roboto Slab', serif;
+      border-bottom: 1px solid transparent;
+      padding-bottom: 2px;
+    }
+
+    .nav-list a:hover {
+      border-bottom: 1px solid black;
+    }
+
+    /* Page Title */
+    h1, h2, h3 {
+      font-family: 'Roboto Slab', serif;
+      margin-top: 1.4em;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      padding: 20px 0;
+      font-size: 0.9rem;
+      color: #444;
+      border-top: 1px solid #ccc;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Navigation Window -->
+    <nav class="nav-window">
+      <div class="nav-title">MECCANO HISTORICAL MUSEUM</div>
+      <ul class="nav-list">
+        <li><a href="/catalogs/">Catalogs</a></li>
+        <li><a href="/manuals/">Manuals</a></li>
+        <li><a href="/ephemera/">Ephemera</a></li>
+        <li><a href="/restorations/">Restorations</a></li>
+        <li><a href="/articles/">Articles</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
+    </nav>
+
+    <!-- Page Content -->
+    {{ content }}
+
+    <!-- Footer -->
+    <footer>
+      Curated by Komisina • Meccano Historical Museum  
+    </footer>
+
+  </div>
+
+</body>
 </html>
